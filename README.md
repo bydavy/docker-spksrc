@@ -24,7 +24,7 @@ docker run -i -t -v /root/spksrc:<host_machine_spksrc_dir> bydavy/spksrc /bin/ba
 ~$ cd /root/spksrc/spk/transmission
 ~$ make arch-88f6281
 ```
-Where <host_machine_spksrc_dir> is the directory of spksrc on your machine
+Where \<host_machine_spksrc_dir\> is the directory of spksrc on your machine
 
 For more information about spksrc go to https://github.com/SynoCommunity/spksrc
 
