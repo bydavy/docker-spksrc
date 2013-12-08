@@ -13,7 +13,7 @@ docker pull bydavy/spksrc
 
 or you could build the image yourself
 ```
-sudo docker run -i -t ubuntu /bin/bash
+docker build -t bydavy/spksrc https://raw.github.com/bydavy/docker-spksrc/master/Dockerfile
 ```
 
 ## Usage
