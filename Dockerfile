@@ -4,7 +4,6 @@ MAINTAINER Davy Leggieri <bydavy@gmail.com>
 # Enable i386 multiarch
 RUN dpkg --add-architecture i386
 RUN apt-get update -q
-#RUN apt-get upgrade -qy
 
 # Install 32 bits libs
 RUN apt-get install -qy ia32-libs
@@ -14,4 +13,6 @@ RUN apt-get install -qy build-essential debootstrap python-pip automake libgmp3-
 RUN pip install -U pip
 
 # Volume pointing to spksrc sources
-VOLUME /root/spksrc
+VOLUME /spksrc
+
+WORKDIR /spksrc
