@@ -4,23 +4,11 @@ docker-spksrc
 Docker container for spksrc.
 Spksrc is a cross compilation framework to create native packages for the Synology's NAS.
 
-## Pulling the image
-
-A prebuilt container is available in the docker index
-```
-docker pull bydavy/spksrc
-```
-
-or you could build the image yourself
-```
-docker build -t bydavy/spksrc https://raw.github.com/bydavy/docker-spksrc/master/Dockerfile
-```
-
 ## Usage
 
 To run the container, do the following:
 ```
-docker run -i -t -v <host_machine_spksrc_dir>:/spksrc bydavy/spksrc
+docker run -it --rm -v <host_machine_spksrc_dir>:/spksrc bydavy/spksrc
 ~$ cd /spksrc/spk/transmission
 ~$ make arch-88f6281
 ```
