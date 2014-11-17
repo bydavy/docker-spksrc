@@ -20,8 +20,8 @@ docker build -t bydavy/spksrc https://raw.github.com/bydavy/docker-spksrc/master
 
 To run the container, do the following:
 ```
-docker run -i -t -v /root/spksrc:<host_machine_spksrc_dir> bydavy/spksrc /bin/bash
-~$ cd /root/spksrc/spk/transmission
+docker run -i -t -v <host_machine_spksrc_dir>:/spksrc bydavy/spksrc
+~$ cd /spksrc/spk/transmission
 ~$ make arch-88f6281
 ```
 Where \<host_machine_spksrc_dir\> is the directory of spksrc on your machine
